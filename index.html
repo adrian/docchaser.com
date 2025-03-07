@@ -13,15 +13,29 @@
     section { padding: 3rem 2rem; }
     .cta { background: #007BFF; color: white; padding: 1rem 2rem; border: none; cursor: pointer; border-radius: 8px; font-size: 1.2rem; }
     .cta:hover { background: #0056b3; }
-    .feature { margin: 2rem 0; text-align: left; max-width: 800px; display: inline-block; }
-    .feature h3 { color: #007BFF; }
+    .feature {
+      margin: 2rem 0;
+      text-align: left;
+      max-width: 800px;
+      display: flex;
+      align-items: center;
+    }
+    .feature img {
+      margin-right: 1rem;
+    }
     footer { padding: 2rem; background: #001f3f; color: white; }
+    .features-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
   </style>
 </head>
 <body>
 <header>
   <h1>DocChaser</h1>
-  <p>Automating Subcontractor Paperwork – So You Don't Have To</p>
+  <p>Automating Subcontractor Paperwork - So You Don't Have To</p>
 </header>
 
 <section>
@@ -30,18 +44,27 @@
   <button class="cta">Join the Waitlist</button>
 </section>
 
-<section>
+<section class="features-container">
   <div class="feature">
-    <h3>Automated Follow-Ups</h3>
-    <p>DocChaser sends polite, persistent reminders to subcontractors on your behalf — until the paperwork arrives.</p>
+    <img src="images/automated-followups.webp" alt="Automated Follow-Ups" width="200" height="200">
+    <div>
+      <h3>Automated Follow-Ups</h3>
+      <p>DocChaser sends polite, persistent reminders to subcontractors on your behalf — until the paperwork arrives.</p>
+    </div>
   </div>
   <div class="feature">
-    <h3>Escalation to Humans</h3>
-    <p>Still no response? We'll flag the subcontractor to your team for further action.</p>
+    <img src="images/escalation-to-humans.webp" alt="Escalation to Humans" width="200" height="200">
+    <div>
+      <h3>Escalation to Humans</h3>
+      <p>Still no response? We'll flag the subcontractor to your team for further action.</p>
+    </div>
   </div>
   <div class="feature">
-    <h3>Progress Dashboard</h3>
-    <p>See which documents are still outstanding and who needs chasing — all in one place.</p>
+    <img src="images/progress-dashboard.webp" alt="Progress Dashboard" width="200" height="200">
+    <div>
+      <h3>Progress Dashboard</h3>
+      <p>See which documents are still outstanding and who needs chasing — all in one place.</p>
+    </div>
   </div>
 </section>
 
